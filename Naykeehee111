@@ -3720,25 +3720,24 @@ end)
              game.Players.localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2850.20068, 7.39224768, 5354.99268)
           end)
        end
-       
-       local esp = win:Tab("⚫Esp", "http://www.roblox.com/asset/?id=6023426915")
-       esp:Toggle("ESP Player",false,function(Value)
-          PLYESP = Value
-          Findply(PLYESP)
-       end)
-       esp:Toggle("ESP Chest",false,function(Value)
-          ChestESP = Value
-          FindChest(ChestESP)
-       end)
-       esp:Toggle("ESP Devil Fruit",false,function(Value)
-          DevilFruitESP = Value
-          FindDevilFruit(DevilFruitESP)
-       end)
-       esp:Toggle("ESP Flower",false,function(Value)
-          FlowerESP = Value
-          FindFlower(FlowerESP)
-       end)
+
        local Raids = win:Tab("⚫Esp - Dungeon", "http://www.roblox.com/asset/?id=6023426915")
+       Raids:Toggle("ESP Player",false,function(Value)
+         PLYESP = Value
+         Findply(PLYESP)
+      end)
+      Raids:Toggle("ESP Chest",false,function(Value)
+         ChestESP = Value
+         FindChest(ChestESP)
+      end)
+      Raids:Toggle("ESP Devil Fruit",false,function(Value)
+         DevilFruitESP = Value
+         FindDevilFruit(DevilFruitESP)
+      end)
+      Raids:Toggle("ESP Flower",false,function(Value)
+         FlowerESP = Value
+         FindFlower(FlowerESP)
+      end)
        Raids:line()
        Raids:Label("Use In Dungeon Only",true)
        Raids:Button("Dungeon",function()
